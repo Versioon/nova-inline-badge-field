@@ -14,6 +14,8 @@ This [Laravel Nova](https://nova.laravel.com/) package adds an inline badge fiel
 
 A `Select` field on Form views that renders as a colored badge on Index and Detail views. Clicking the badge opens a native `<select>`; picking a value sends a Nova update request for the resource and re-colors the badge inline — no need to open the edit form.
 
+![Demo](docs/demo.gif)
+
 ## Installation
 
 Install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
