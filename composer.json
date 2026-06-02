@@ -1,0 +1,40 @@
+{
+  "name": "versioon/nova-inline-badge-field",
+  "description": "A Laravel Nova inline badge field.",
+  "keywords": [
+    "laravel",
+    "nova",
+    "badge",
+    "select",
+    "inline",
+    "field"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "laravel/nova": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Versioon\\NovaInlineBadgeField\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Versioon\\NovaInlineBadgeField\\FieldServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://nova.laravel.com"
+    }
+  ]
+}
