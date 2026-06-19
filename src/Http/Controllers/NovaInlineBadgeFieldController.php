@@ -35,7 +35,7 @@ class NovaInlineBadgeFieldController extends Controller
                 $resource = collect($resource->lenses($request))
                     ->firstWhere(fn (Lens $lens) => $lens->uriKey() === $lensUri);
             }
-            $allFields = collect($resource->fields($request));
+            $allFields = collect($resource->availableFields($request));
             $field = $this->findField($allFields, $attribute);
 
             $field->fillInto($request, $model, $attribute);
